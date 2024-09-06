@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+  <title>Listian</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/venobox.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/summernote.min.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+</head>
+
+<body>
+
+  <!--==========================
+        TOPBAR PART START
+    ===========================-->
+  <section id="wsus__topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-md-7 d-none d-md-block">
+          <ul class="wsus__topbar_left">
+            <li><a href="mailto:support@websolutionus.com"><i class="fal fa-envelope"></i>
+                support@websolutionus.com</a></li>
+            <li><a href="callto:+6958474522655"><i class="fal fa-phone-alt"></i>+6958474522655</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-6 col-md-5">
+          <div class="wsus__topbar_right">
+            <div class="language">
+              <select class="select_js">
+                <option value=""> English </option>
+                <option value="">Arabic</option>
+                <option value="">Hindi</option>
+              </select>
+            </div>
+            <a href="dsahboard.html"><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==========================
+        TOPBAR PART END
+    ===========================-->
+
+
+  <!--==========================
+        MENU PART START
+    ===========================-->
+  <nav class="navbar navbar-expand-lg main_menu">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="DB.Card">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="far fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listing_grid_view.html">listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">pages <i class="far fa-chevron-down"></i></a>
+            <ul class="menu_droapdown">
+              <li><a href="list_category.html">list category</a></li>
+              <li><a href="blog_details.html">blog details</a></li>
+              <li><a href="listing_details.html">listing details</a></li>
+              <li><a href="dsahboard.html">dashboard</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact us</a>
+          </li>
+        </ul>
+        <a class="user_btn" href="dsahboard.html"><i class="far fa-plus"></i> add listing</a>
+      </div>
+    </div>
+  </nav>
+  <!--==========================
+        MENU PART END
+    ===========================-->
+
+
+  <!--=============================
+    DASHBOARD START
+  ==============================-->
+  <section id="dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="dashboard_sidebar">
+            <span class="close_icon"><i class="far fa-times"></i></span>
+            <a href="dsahboard.html" class="dash_logo"><img src="images/user_large_img.jpg" alt="logo"
+                class="img-fluid"></a>
+            <ul class="dashboard_link">
+              <li><a href="dsahboard.html"><i class="fas fa-tachometer"></i>Dashboard</a></li>
+              <li><a href="dsahboard_listing.html"><i class="fas fa-list-ul"></i> My Listing</a></li>
+              <li><a href="dsahboard_create_listing.html"><i class="fal fa-plus-circle"></i> Create Listing</a></li>
+              <li><a href="dsahboard_review.html"><i class="far fa-star"></i> Reviews</a></li>
+              <li><a href="dsahboard_wishlist.html"><i class="far fa-heart"></i> Wishlist</a></li>
+              <li><a href="dsahboard_profile.html"><i class="far fa-user"></i> My Profile</a></li>
+              <li><a href="dsahboard_order.html"><i class="fal fa-notes-medical"></i> Orders</a></li>
+              <li><a href="dsahboard_package.html"><i class="fal fa-gift-card"></i> Package</a></li>
+              <li><a class="active" href="dsahboard_message.html"><i class="far fa-comments-alt"></i> Message</a></li>
+              <li><a href="#"><i class="far fa-sign-out-alt"></i> Logo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="dashboard_content">
+            <div class="dashboard_message_area">
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="tf__message_list">
+                    <div class="nav flex-column nav-pills tf__massager_option" id="v-pills-tab" role="tablist"
+                      aria-orientation="vertical">
+                      <div class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-1.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Charlene Reed</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">30 min</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-link" id="v-pills-messages-tab1" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages1" role="tab" aria-controls="v-pills-messages1"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-2.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Sohan Islam</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">20 min</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="nav-link" id="v-pills-messages-tab2" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages2" role="tab" aria-controls="v-pills-messages2"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-3.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Asad Islam</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">10 min</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="nav-link" id="v-pills-messages-tab3" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages3" role="tab" aria-controls="v-pills-messages3"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Jannatul Jeo </h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">30 min</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="nav-link" id="v-pills-messages-tab4" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages4" role="tab" aria-controls="v-pills-messages4"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-5.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Charlene Reed</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">27 min</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="nav-link" id="v-pills-messages-tab5" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages5" role="tab" aria-controls="v-pills-messages5"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-6.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Happy Heya</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">18 min</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="nav-link" id="v-pills-messages-tab6" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages6" role="tab" aria-controls="v-pills-messages6"
+                        aria-selected="false">
+                        <div class="tf__single_massage d-flex">
+                          <div class="tf__single_massage_img">
+                            <img src="images/massage-7.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="tf__single_massage_text">
+                            <h4>Charlene Reed</h4>
+                            <p>Lorem ipsum dolor si..</p>
+                            <span class="tf__massage_time">9 min</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8">
+                  <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab1" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages2" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab2" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages3" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab3" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages4" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab4" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages5" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab5" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages6" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab6" tabindex="0">
+                      <div class="tf___single_chat">
+                        <div class="tf__single_chat_top">
+                          <div class="img">
+                            <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                          </div>
+                          <div class="text">
+                            <h4>Charlene Reed</h4>
+                            <p>active</p>
+                            <a href="#">Clear Chat</a>
+                          </div>
+                        </div>
+
+                        <div class="tf__single_chat_body">
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>eum errem is any one aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Mundi admodum menandri, eum errem is any one aperiri at. Ut
+                                quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                          <div class="tf__chating">
+                            <div class="tf__chating_img">
+                              <img src="images/massage-4.png" alt="person" class="img-fluid w-100">
+                            </div>
+                            <div class="tf__chating_text">
+                              <p>Cum id mundi admodum menandri, eum errem is any one
+                                aperiri at. Ut quas facilis qui</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                          </div>
+                          <div class="tf__chating tf_chat_right">
+                            <div class="tf__chating_text">
+                              <p>Please check your mail and come on meeting</p>
+                              <span>15 Jun, 2023, 05:26 AM</span>
+                            </div>
+                            <div class="tf__chating_img">
+                              <img src="images/massage-8.png" alt="person" class="img-fluid w-100">
+                            </div>
+                          </div>
+                        </div>
+                        <form class="tf__single_chat_bottom">
+                          <input type="text" placeholder="Type a message...">
+                          <button class="tf__massage_btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============================
+    DASHBOARD START
+  ==============================-->
+
+
+  <!--==========================
+    FOOTER PART START
+  ===========================-->
+  <footer>
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-xl-3 col-sm-12 col-md-6 col-lg-6">
+          <div class="footer_text">
+            <h3>About Us</h3>
+            <p>In publishing and graphic designLorem Ipsum dummy and typesetting Degital Marketeing. has
+              been the industry's standard dummy text ever since.</p>
+            <ul class="footer_icon">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-6 col-lg-6">
+          <div class="footer_text">
+            <h3>My Account</h3>
+            <ul class="footer_link">
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> login</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> register</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> change password</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> forget password</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-3 col-lg-3">
+          <div class="footer_text">
+            <h3>Helpful Links</h3>
+            <ul class="footer_link">
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> FAQ</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> Feedbacek</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> report</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-3 col-lg-3">
+          <div class="footer_text">
+            <h3>Information</h3>
+            <ul class="footer_link">
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> blog</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> Testimonial</a></li>
+              <li><a href="#"><i class="far fa-chevron-double-right"></i> Tetss</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-md-6 col-lg-6">
+          <div class="footer_text footer_contact">
+            <h3>Information</h3>
+            <ul class="footer_link">
+              <li>
+                <p><i class="far fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</p>
+              </li>
+              <li><a href="#"><a href="mailto:example@gmail.com"><i class="fal fa-envelope"></i>
+                    example@gmail.com</a></li>
+              <li><a href="#"><a href="callto:+6985224411026"><i class="fal fa-phone-alt"></i>
+                    +6985224411026</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-5">
+            <p>&#64; 2021 <a href="#">DB.Card</a> All Rights Reserved.</p>
+          </div>
+          <div class="col-xl-6 col-md-7">
+            <ul class="footer_bottom_link">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy </a></li>
+              <li><a href="#"> Contact </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--==========================
+    FOOTER PART END
+  ===========================-->
+
+
+  <!--=============SCROLL BTN==============-->
+  <div class="scroll_btn">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <!--=============SCROLL BTN==============-->
+
+
+  <!--jquery library js-->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!--bootstrap js-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--font-awesome js-->
+  <script src="js/Font-Awesome.js"></script>
+  <!--slick js-->
+  <script src="js/slick.min.js"></script>
+  <!--venobox js-->
+  <script src="js/venobox.min.js"></script>
+  <!--counter js-->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countup.min.js"></script>
+  <!--nice select js-->
+  <script src="js/select2.min.js"></script>
+  <!--isotope js-->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <!--summer_note js-->
+  <script src="js/summernote.min.js"></script>
+  <!--select js-->
+  <script src="js/jquery.nice-select.min.js"></script>
+
+  <!--main/custom js-->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
